@@ -17,10 +17,10 @@ public class Driver {
 				System.out.println(name + ":");
 				if(name.equals("Someone")){
 					villager.sayHi();
+					name = villager.name();
 				}else{
 					villager.speak();
 				}
-				name = villager.name();
 			}else{
 				break;
 			}
