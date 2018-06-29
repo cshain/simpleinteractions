@@ -38,7 +38,8 @@ public abstract class Dialogue {
 						System.out.println(accepted[rng.nextInt(3)]);
 					}else{
 						System.out.println(accepted[rng.nextInt(3)] + " What is it?\nEnter a catchphrase!");
-						catchphrase = reader.next();
+						reader.nextLine();
+						catchphrase = reader.nextLine();
 						System.out.println("");
 						System.out.println("That's perfect! Thanks, " + catchphrase + "!");
 						resetCatchphrase();
